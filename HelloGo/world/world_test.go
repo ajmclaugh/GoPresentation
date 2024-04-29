@@ -17,7 +17,7 @@ func TestAddWorldPointer(t *testing.T) {
 
 func BenchmarkAddWorld(b *testing.B) {
 	hello := "Hello"
-	AddWorld(hello)
+	_ = AddWorld(hello)
 
 }
 func BenchmarkAddWorldPointer(b *testing.B) {

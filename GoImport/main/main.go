@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	HelloGo "github.com/ajmclaugh/HelloGo/world"
+	"github.com/ajmclaugh/HelloGo/world"
 	"github.com/softchris/math"
 )
 

@@ -14,15 +14,19 @@ type catjson struct {
 
 func ApiCall(url string) []byte {
 
-	req, err := http.Get(url)
+	req, errget := http.Get(url)
 
-	if err != nil {
-		log.Fatalf("An Error occured! err: %s", err)
+	if errget != nil {
+		log.Fatalf("An Error occured! err: %s", errget)
 	}
 
 	defer req.Body.Close()
 
 	response, err := io.ReadAll(req.Body)
+
+	if err != nil {
+		log.Fatalf("An Error occured! err: %s", err)
+	}
 
 	return response
 

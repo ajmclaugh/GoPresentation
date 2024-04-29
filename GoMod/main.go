@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	loopy "github.com/ajmclaugh/GoMod/loopy"
+	"github.com/ajmclaugh/GoMod/loopy"
 )
 
 func main() {

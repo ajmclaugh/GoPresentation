@@ -7,3 +7,5 @@ use ./GoImport
 use ./GoMod
 
 use ./HelloGo
+
+replace github.com/ajmclaugh/HelloGo v0.0.0 => ../HelloGo
